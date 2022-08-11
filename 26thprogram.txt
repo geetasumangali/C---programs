@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+  int n,r,x,y,s=0,d=1;
+  printf("enter n value: \n enter x and y value:");
+  scanf("%d %d %d",&n,&x,&y);
+  while(n>0)
+   {
+      r=n%10;
+      if(r==x)
+	 s=s+y*d;
+      else
+	s=s+r*d;
+        d=d*10;
+     n=n/10;
+   }	
+  printf("\n %d",s);
+  return(0);
+}
+**********
+output:-
+testcase 1:-
+enter n value:
+ enter x and y value:16918
+1 7
+
+ 76978
+testcase 2:-
+enter n value:
+ enter x and y value:12345
+3 9
+
+ 12945
