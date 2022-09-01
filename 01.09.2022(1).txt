@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main()
+{
+	int a,x;
+	printf("Enter a number");
+	scanf("%d",&a);
+	x=evenorodd(a);
+	if(a%2==0)
+	  printf("even");
+	else
+	  printf("odd");
+}
+int evenorodd(int a)
+{
+	if(a%2==0)
+	  return(0);
+	else
+	  return(1);
+	
+}
+**************************
+output:-
+Enter a number 6
+even

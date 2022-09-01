@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+	int x,ans;
+	printf("Enter a number");
+	scanf("%d",&x);
+	ans=fact(x);
+	printf("%d",ans);
+}
+int fact(int x)
+{
+	int fact=1;
+	while(x>0)
+	{
+		fact=fact*x;
+		x--;
+	}
+	return(fact);
+}
+*********************
+output:-
+Enter a number 5
+120
